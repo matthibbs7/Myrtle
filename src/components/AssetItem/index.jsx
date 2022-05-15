@@ -28,7 +28,7 @@ const CoinItem = ({ marketCoin }) => {
             <View style={styles.rank_container}>
               <Text style={styles.rank}>{market_cap_rank}</Text>
             </View>
-            <Text style={styles.text}>{symbol.toUpperCase()}</Text>
+            <Text style={{color: 'black', marginRight: 5, fontWeight: '500'}}>{symbol.toUpperCase()}</Text>
             <AntDesign name={price_change_percentage_24h < 0 ? 'caretdown' : 'caretup'} size={12} color={caretColor} style={{alignSelf: 'center', marginRight: 5}} />
             <Text style={{color: caretColor}}>{price_change_percentage_24h.toFixed(2)}%</Text>
           </View>
@@ -43,13 +43,13 @@ const CoinItem = ({ marketCoin }) => {
 
 const styles = StyleSheet.create({
     coin_title: {
-      color: 'white',
+      color: 'black',
       fontSize: 16,
       fontWeight: 'bold',
       marginBottom: 3
     },
     text: {
-      color: 'white',
+      color: 'black',
       marginRight: 5,
     },
     coinContainer: {
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
       
     },
     rank_container: {
-      backgroundColor: '#585858',
+      backgroundColor: 'grey',
       paddingHorizontal: 5,
       borderRadius: 5,
       marginRight: 5,
